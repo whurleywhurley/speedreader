@@ -1,0 +1,24 @@
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<header>
+    Paste text below, select speed using slider, then click Start. You 
+can adjust the speed while it is playing. There is no pause button. To 
+restart, refresh the page.
+</header>
+
+<div id="main">
+    <div id="mainText">
+    Words
+    </div>
+</div>
+
+<footer>
+    <button onclick="playWords()">Start</button>
+    <div id="rangeBox">
+        <input id="range" type="range" min="30" max="720" value="120" oninput="updateRange()">
+        <div id="rangeVal">Words per Minute: 120</div>
+    </div>
+    <br>
+    <textarea id="inText" placeholder="Place text here..."></textarea>
+</footer>

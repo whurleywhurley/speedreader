@@ -1,0 +1,79 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background-color: navy;
+}
+
+#main {
+    font-size: 6em;
+    flex-basis: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+header, footer {
+    height: 5em;
+    background-color: navy;
+    color: white;
+    padding: 1%;
+}
+
+header {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+footer {
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+textarea, textarea:focus {
+    width: 95%;
+    height: 200%;
+    font-size: .75em;
+    padding: .4em;
+    border-radius: .4em;
+    outline: none;
+}
+
+#rangeBox {
+    margin: .5em;
+}
+
+button {
+    font-size: .75em;
+    border-radius: .3em;
+    border: none;
+    padding: .4em .8em;
+    box-shadow: 0 4px rgb(90, 90, 90);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    filter: brightness(.75);
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+input[type='range'] {
+    width: 70%;
+}
